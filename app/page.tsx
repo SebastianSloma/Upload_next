@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -38,6 +39,12 @@ export default function Home() {
           priority
         />
       </div>
+
+      <div className="flex justify-evenly w-full">
+        <Link href='/upload-button'>Upload Button</Link>
+        <Link href='upload-dnd'>Upload Drag n Drop</Link>
+      </div>
+
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
